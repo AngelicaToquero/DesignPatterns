@@ -28,7 +28,7 @@ public class Clinic {
                 petFile.setPetName("Bantay");
                 petFile.setPet(pet);
                 ((Dog) pet).setBreed("German Shepperd");
-                System.out.println("Breed: " + ((Dog) pet).getBreed();
+                System.out.println("Breed: " + ((Dog) pet).getBreed());
                 break;
                 
             case 2: pet = new Cat();
@@ -38,15 +38,17 @@ public class Clinic {
                 ((Cat) pet).setNoOfLives(9);
                 System.out.println("Number of lives: " + ((Cat) pet).getNoOfLives());
                 break;
+                default: 
+                System.out.println("Invalid choice.");
         }
         if (choice == 1 || choice == 2) {
-
+        
         System.out.println("Pet id is " + petFile.getPetId());
         System.out.println("Pet name is " + petFile.getPetName());
         System.out.println("Pet kind: " + petFile.getPet().getClass().getSimpleName());
         System.out.println("Communication sound: "+ petFile.getPet().makeSound());
         System.out.println("Play mode: " + petFile.getPet().play());
-
+        System.out.println();
     }
 }
         input.close();
